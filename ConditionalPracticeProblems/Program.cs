@@ -42,21 +42,41 @@ namespace ConditionalPracticeProblems
             //}
 
 
-            //Problem 3
-            Console.WriteLine("Please enter a number");
-            int number = int.Parse(Console.ReadLine());
+            ////Problem 3
+            //Console.WriteLine("Please enter a number");
+            //int number = int.Parse(Console.ReadLine());
 
-            if (number < 0)
+            //if (number < 0)
+            //{
+            //    Console.WriteLine("The number " + number + " is a negative number.");
+            //}
+            //else if (number == 0)
+            //{
+            //    Console.WriteLine("The number 0 is a neutral number.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The number " + number + " is a positive number.");
+            //}
+
+
+
+            //Problem 4
+            Console.WriteLine("Please enter a letter");
+            char letter = char.Parse(Console.ReadLine());
+
+            switch (letter)
             {
-                Console.WriteLine("The number " + number + " is a negative number.");
-            }
-            else if (number == 0)
-            {
-                Console.WriteLine("The number 0 is a neutral number.");
-            }
-            else
-            {
-                Console.WriteLine("The number " + number + " is a positive number.");
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine("That letter is a vowel.");
+                    break;
+                default:
+                    Console.WriteLine("That letter is a consonant.");
+                    break;
             }
 
 
