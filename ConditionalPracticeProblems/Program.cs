@@ -116,10 +116,10 @@ namespace ConditionalPracticeProblems
             Console.WriteLine("Please input a fourth number");
             double fourthNumber = double.Parse(Console.ReadLine());
 
-            double avg = firstNumber + secondNumber + thirdNumber + fourthNumber;
-            double sum = avg / 4;
+            double sum = firstNumber + secondNumber + thirdNumber + fourthNumber;
+            double avg = sum / 4;
 
-            Console.WriteLine("The mode is " + sum);
+            Console.WriteLine("The mode is " + avg);
 
 
 
